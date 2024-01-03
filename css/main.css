@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Chilanka";
+  src: url("/assets/fonts/Chilanka-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/assets/fonts/Montserrat-Regular.ttf");
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.butt {
+  border-radius: 4px;
+  padding: 28px 50px;
+  font-family: "Chilanka";
+  font-size: 19px;
+  border: 1px solid #41403E;
+  text-align: center;
+  background-color: transparent;
+}
+
+header > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header .header__topMenu {
+  padding-top: 28px;
+}
+header .topMenu__searchBar {
+  position: relative;
+}
+header .topMenu__searchBar .topMenu__input {
+  font-family: "Montserrat";
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(234, 234, 234);
+  width: 472px;
+  padding: 15px 25px;
+}
+header .topMenu__searchBar .topMenu__search {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+header .topMenu__contacts {
+  display: flex;
+  font-family: "Chilanka";
+  font-size: 19px;
+  letter-spacing: 0.2px;
+}
+header .topMenu__contacts .topMenu__contactLabel {
+  text-align: right;
+  margin-bottom: 8px;
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #908F8D;
+}
+header .topMenu__contacts .topMenu__phone {
+  margin-right: 67px;
+}
+header .topMenu__contacts .topMenu__emailLink, header .topMenu__contacts .topMenu__phoneLink {
+  color: black;
+}
+header .header_divider {
+  display: block;
+  border: 1px solid rgb(234, 234, 234);
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+header .header__bottomMenu {
+  margin-bottom: 20px;
+}
+header .header__bottomMenu nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Chilanka";
+  font-size: 19px;
+}
+header .header__bottomMenu nav .bottomMenu__select {
+  font-family: "Chilanka";
+  font-size: 19px;
+  border: none;
+}
+header .header__bottomMenu nav .bottomMenu__categories .bottomMenu__category {
+  cursor: pointer;
+}
+header .header__bottomMenu nav .bottomMenu__categories .bottomMenu__category:not(:last-child) {
+  margin-right: 50px;
+}
+header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionImg {
+  cursor: pointer;
+}
+header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionImg:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main #headSplider {
+  margin-bottom: 150px;
+  background-color: #F9F3EC;
+}
+.main #headSplider .splide__arrow {
+  background: none;
+}
+.main #headSplider .splide__arrow svg {
+  width: 100px;
+  height: 60px;
+}
+.main #headSplider .splide__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main #headSplider .splide__slide .headSplider__text {
+  margin-left: 58px;
+}
+.main #headSplider .splide__slide .headSplider__text .headSplider__promo {
+  font-size: 19px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: #DEAD6F;
+}
+.main #headSplider .splide__slide .headSplider__text .headSplider__motto {
+  font-size: 88px;
+  font-family: "Chilanka";
+  text-transform: capitalize;
+  color: black;
+  max-width: 700px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main #headSplider .splide__slide .headSplider__text .headSplider__motto .headSplider__span {
+  color: #DEAD6F;
+}
+.main .shopShortcuts {
+  margin-bottom: 150px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .shopShortcuts .shopShortcuts__shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.main .shopShortcuts .shopShortcuts__shop .shopShortcuts__title {
+  margin-top: 16px;
+  font-size: 28px;
+  font-family: "Chilanka";
+  text-transform: capitalize;
+  color: #41403E;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=main.css.map */

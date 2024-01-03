@@ -1,0 +1,23 @@
+{
+  "name": "waggy-pet-shop",
+  "version": "1.0.0",
+  "description": "s website for a pet shop",
+  "main": "./js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-ruzhynskyi/WAGGY-Pet-Shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-ruzhynskyi/WAGGY-Pet-Shop/issues"
+  },
+  "homepage": "https://github.com/m-ruzhynskyi/WAGGY-Pet-Shop#readme",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "animate.css": "^4.1.1"
+  }
+}

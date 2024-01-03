@@ -1,0 +1,54 @@
+.main{
+  #headSplider{
+    margin-bottom: 150px;
+    background-color: $mainColor;
+    .splide__arrow{
+      background: none;
+      & svg{
+        width: 100px;
+        height: 60px;
+      }
+    }
+    .splide__slide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .headSplider__text{
+        margin-left: 58px;
+        .headSplider__promo{
+          @include setFont($secondaryFontFamily, 4, uppercase, $mainFontColor)
+        }
+        .headSplider__motto{
+          @include setFont($mainFontFamily, 73, capitalize, black);
+          max-width: 700px;
+          margin: {
+            top: 30px;
+            bottom: 30px;
+          };
+          .headSplider__span{
+            color: $mainFontColor;
+          }
+        }
+      }
+    }
+  }
+  .shopShortcuts{
+    margin-bottom: 150px;
+    max-width: $screen-lr;
+    @include autoMargin();
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .shopShortcuts__shop{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      .shopShortcuts__title{
+        margin-top: 16px;
+        @include setFont($mainFontFamily, 13, capitalize, #41403E);
+        font-weight: 400;
+      }
+    }
+  }
+}

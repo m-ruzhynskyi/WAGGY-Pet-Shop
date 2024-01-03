@@ -5,18 +5,124 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <title>WAGGY Pet Shop.</title>
 </head>
 <body>
     <div class="wrapper">
-        <header></header>
-        <main></main>
-        <footer></footer>
+        <header class="header">
+            <div class="header__topMenu">
+                <img class="logoImg" src="./assets/img/Logo.png" alt="Logo">
+                <div class="topMenu__searchBar">
+                    <input class="topMenu__input" type="text" placeholder="Search for more ethan 10,000 products"
+                           name="Search products" required>
+                    <img src="./assets/img/search.svg" alt="Search" class="topMenu__search">
+                </div>
+                <div class="topMenu__contacts">
+                    <div class="topMenu__phone">
+                        <p class="topMenu__contactLabel">Phone</p>
+                        <a class="topMenu__phoneLink" href="tel:+980-34-984-089">+980-34-984-089</a>
+                    </div>
+                    <div class="upMenu__mail">
+                        <p class="topMenu__contactLabel">Email</p>
+                        <a class="topMenu__emailLink" href="mailto:waggy@gmail.com">waggy@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="header_divider">
+            <div class="header__bottomMenu">
+                <nav class="bottomMenu__nav">
+                    <select name="categories" class="bottomMenu__select">
+                        <option class="bottomMenu__options" selected>Shop by category</option>
+                        <option class="bottomMenu__options">Clothes</option>
+                        <option class="bottomMenu__options">Food</option>
+                        <option class="bottomMenu__options">Toy</option>
+                    </select>
+                    <div class="bottomMenu__categories">
+                        <a class="bottomMenu__category">Home</a>
+                        <a class="bottomMenu__category">Page</a>
+                        <a class="bottomMenu__category">Shop</a>
+                        <a class="bottomMenu__category">Blog</a>
+                        <a class="bottomMenu__category">Contact</a>
+                        <a class="bottomMenu__category">Offers</a>
+                    </div>
+                    <div class="bottomMenu__userOptions">
+                        <img class="bottomMenu__userOptionImg" src="./assets/img/person.svg" alt="User">
+                        <img class="bottomMenu__userOptionImg" src="./assets/img/heart.svg" alt="Liked">
+                        <img class="bottomMenu__userOptionImg" src="./assets/img/shopping-cart.svg" alt="Cart">
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section id="headSplider" class="splide">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg>
+                    </button>
+                </div>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class='headSplider__img' src="./assets/img/main_photo.png" alt="Pet">
+                            <div class="headSplider__text">
+                                <p class="headSplider__promo">save 10-20 % off</p>
+                                <h1 class="headSplider__motto">Best destination for <span class="headSplider__span">your pets</span></h1>
+                                <button class="butt">Shop now →</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class='headSplider__img' src="./assets/img/main_photo3.png" alt="Pet">
+                            <div class="headSplider__text">
+                                <p class="headSplider__promo">save 10-20 % off</p>
+                                <h1 class="headSplider__motto">Best destination for <span class="headSplider__span">your pets</span></h1>
+                                <button class="butt">Shop now →</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class='headSplider__img' src="./assets/img/main_photo2.png" alt="Pet">
+                            <div class="headSplider__text">
+                                <p class="headSplider__promo">save 10-20 % off</p>
+                                <h1 class="headSplider__motto">Best destination for <span class="headSplider__span">your pets</span></h1>
+                                <button class="butt">Shop now →</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="shopShortcuts">
+                <div class="shopShortcuts__shop">
+                    <a href="#" class="shopShortcuts__link"><img class="shopShortcuts__img" src="./assets/img/bowl-food.svg" alt="Accessories"></a>
+                    <a href="#" class="shopShortcuts__link"><h3 class="shopShortcuts__title">Accessories</h3></a>
+                </div>
+                <div class="shopShortcuts__shop">
+                    <a href="#" class="shopShortcuts__link"><img class="shopShortcuts__img" src="./assets/img/bird.svg" alt="Bird Shop"></a>
+                    <a href="#" class="shopShortcuts__link"><h3 class="shopShortcuts__title">Bird Shop</h3></a>
+                </div>
+                <div class="shopShortcuts__shop">
+                    <a href="#" class="shopShortcuts__link"><img class="shopShortcuts__img" src="./assets/img/dog.svg" alt="Dog Shop"></a>
+                    <a href="#" class="shopShortcuts__link"><h3 class="shopShortcuts__title">Dog Shop</h3></a>
+                </div>
+                <div class="shopShortcuts__shop">
+                    <a href="#" class="shopShortcuts__link"><img class="shopShortcuts__img" src="./assets/img/fish.svg" alt="Fish Shop"></a>
+                    <a href="#" class="shopShortcuts__link"><h3 class="shopShortcuts__title">Fish Shop</h3></a>
+                </div>
+                <div class="shopShortcuts__shop">
+                    <a href="#" class="shopShortcuts__link"><img class="shopShortcuts__img" src="./assets/img/cat.svg" alt="Cat Shop"></a>
+                    <a href="#" class="shopShortcuts__link"><h3 class="shopShortcuts__title">Cat Shop</h3></a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
