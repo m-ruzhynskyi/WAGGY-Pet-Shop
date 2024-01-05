@@ -8,7 +8,7 @@ header{
       right: auto;
       left: auto;
     }
-    }
+  }
   .header__topMenu{
     padding-top: 28px;
   }
@@ -75,8 +75,8 @@ header{
           cursor: pointer;
         }
         .bottomMenu__category:not(:last-child){
-           margin-right: 50px;
-         }
+          margin-right: 50px;
+        }
       }
       .bottomMenu__userOptions{
         .bottomMenu__userOptionImg{

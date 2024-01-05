@@ -1,54 +1,367 @@
-.main{
-  #headSplider{
+.main {
+  #headSplider {
     margin-bottom: 150px;
     background-color: $mainColor;
-    .splide__arrow{
-      background: none;
-      & svg{
-        width: 100px;
-        height: 60px;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner__text {
+      margin-left: 58px;
+
+      .banner__promo {
+        @include setFont($secondaryFontFamily, 4, uppercase, $mainFontColor)
       }
-    }
-    .splide__slide{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .headSplider__text{
-        margin-left: 58px;
-        .headSplider__promo{
-          @include setFont($secondaryFontFamily, 4, uppercase, $mainFontColor)
-        }
-        .headSplider__motto{
-          @include setFont($mainFontFamily, 73, capitalize, black);
-          max-width: 700px;
-          margin: {
-            top: 30px;
-            bottom: 30px;
-          };
-          .headSplider__span{
-            color: $mainFontColor;
-          }
+
+      .banner__motto {
+        @include setFont($mainFontFamily, 73, capitalize, black);
+        max-width: 700px;
+        margin: {
+          top: 30px;
+          bottom: 30px;
+        };
+
+        .banner__span {
+          color: $mainFontColor;
         }
       }
     }
   }
-  .shopShortcuts{
+
+  .shopShortcuts {
     margin-bottom: 150px;
     max-width: $screen-lr;
     @include autoMargin();
     display: flex;
     justify-content: space-around;
     align-items: center;
-    .shopShortcuts__shop{
+
+    .shopShortcuts__shop {
       display: flex;
       flex-direction: column;
       align-items: center;
       cursor: pointer;
-      .shopShortcuts__title{
+
+      .shopShortcuts__title {
         margin-top: 16px;
         @include setFont($mainFontFamily, 13, capitalize, #41403E);
         font-weight: 400;
       }
+    }
+  }
+
+  .products {
+    max-width: $screen_lr;
+    @include autoMargin();
+    margin-bottom: 164px;
+
+    .products__header {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .product__title {
+        @include setFont($mainFontFamily, 40, capitalize, black);
+        font-weight: 400;
+      }
+
+      .product-butt {
+        padding: {
+          top: 20px;
+          bottom: 20px;
+        };
+      }
+    }
+
+    .products__carousel, .bestSelling__carousel  {
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+
+      .splide__arrows {
+        .splide__arrow {
+          height: 48px;
+
+          &--next {
+            right: 0;
+          }
+        }
+
+      }
+
+      .products__product {
+        max-width: 312px;
+
+        .product__imageDiv {
+          background-color: $mainColor;
+          border-radius: 10px;
+          overflow: hidden;
+          position: relative;
+          object-fit: cover;
+          height: 284px;
+          width: 310px;
+          margin-bottom: 30px;
+          padding: {
+            left: 15px;
+          };
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .product_image {
+            transform: translateY(10px);
+          }
+        }
+
+        .product__promo {
+          transform: translate(-110px, -110px);
+          margin: 16px;
+          border: 1px solid rgb(173, 181, 189);
+          padding: 5px 16px;
+          @include setFont($mainFontFamily, 1, uppercase, rgb(65, 64, 62));
+          width: 70px;
+          position: absolute;
+          border-radius: 8px;
+        }
+
+        .product__info {
+          .product__name {
+            @include setFont($mainFontFamily, 11, capitalize, rgba(65, 64, 62, 1));
+            font-weight: 400;
+            cursor: pointer;
+          }
+
+          .product__rating {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: {
+              top: 7.5px;
+              bottom: 10.5px;
+            };
+
+            .product__star:not(:last-child) {
+              margin-right: 4px;
+            }
+
+            &::after {
+              content: '5.0';
+              @include setFont($secondaryFontFamily, 0, none, rgb(144, 144, 144));
+              margin-left: 3.5px;
+            }
+          }
+
+          .product__price {
+            @include setFont($secondaryFontFamily, 11, none, $mainFontColor);
+            font-weight: 300;
+            font-style: normal;
+            margin-bottom: 18px;
+          }
+        }
+
+        .product__events {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+
+          .product__cart {
+            padding: 15px 32px;
+          }
+
+          .likedProduct {
+            background-color: transparent;
+            padding: 17px;
+            border: 1px solid #41403E;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+
+            &:hover {
+              background-color: rgba(255, 17, 10, 0.32);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .foodies {
+    .product__categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .categories__title {
+        @include setFont($mainFontFamily, 2, uppercase, #41403E);
+        font-weight: 400;
+        cursor: pointer;
+        width: 35px;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #D9D9D8;
+        transition: all 0.3s ease-in;
+
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+
+        &:first-child {
+          border-bottom: 2px solid #DEAD6F
+        }
+
+        &:hover {
+          border-bottom: 2px solid #DEAD6F
+        }
+      }
+
+    }
+
+    .pet-foodies {
+      flex-wrap: wrap;
+
+      .food {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .sale{
+    margin-bottom: 150px;
+    background-color: $mainColor;
+    .sale__text{
+      max-width: 480px;
+      margin-right: 120px;
+    }
+    .sale__promo{
+      font-size: $fontSize +21 !important;
+      font-weight: 300;
+      text-transform: capitalize !important;
+      margin-bottom: 30px;
+    }
+    .sale__motto{
+      font-size: $fontSize +60;
+      font-weight: 400;
+    }
+  }
+
+  .reviews{
+    margin-bottom: 200px;
+    .reviews__carousel{
+      max-width: $screen-lr;
+      position: relative;
+      @include autoMargin();
+      .splide__pagination__page{
+        transform: translate(20px, 55px);
+        width: 20px;
+        height: 20px;
+        .is-active{
+          background: black;
+        }
+      }
+      .reviews__review{
+        display: flex;
+        justify-content: center;
+        .review__image{
+          margin: {
+            right: 30px;
+            bottom: 50px;
+          };
+          transform: scale(0.6);
+        }
+        .review__info{
+          .review__text{
+            max-width: 860px;
+            line-height: 150%;
+            @include setFont($mainFontFamily, 21, normal, rgb(144, 143, 141));
+            font-weight: 400;
+          }
+          .review__author{
+            @include setFont($secondaryFontFamily, 0, normal, rgb(65, 64, 62));
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .register{
+    margin-bottom: 150px;
+    background-color: $mainColor;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: {
+      bottom: 150px;
+      top: 150px;
+    };
+    .register__paws{
+      position: absolute; }
+    .first{
+        left: 21%;
+        top: 15%;
+    }
+    .second{
+        right: 15%;
+        bottom: 5%;
+    }
+    .register__form{
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      .form__input{
+        @include setFont($mainFontFamily, 2, capitalize, #908F8D);
+        font-weight: 400;
+        background-color: white;
+        border: rgba(65,64,62, 0.20) 1px solid;
+        border-radius: 4px;
+        padding: 15px;
+        margin-bottom: 6px;
+      }
+      .form__title{
+        @include setFont($mainFontFamily, 40, capitalize, #41403E);
+        font-weight: 400;
+        text-align: center;
+        max-width: 556px;
+        margin-bottom: 35px;
+        .register__span{
+          color: $mainFontColor;
+        }
+      }
+    }
+  }
+
+  .photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: {
+      right: 20px;
+      left: 20px;
+    };
+    .photos__photo{
+      position: relative;
+      cursor: pointer;
+      max-width: 300px;
+    }
+    .photos__inst{
+      opacity: 0;
+      transition: 0.5s;
+      img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        bottom: 135px;
+        left: 133px;
+      }
+    }
+    .photo__photo:hover ~ .photos__inst{
+      opacity: 1;
     }
   }
 }
