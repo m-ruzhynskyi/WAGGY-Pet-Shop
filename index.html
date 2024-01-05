@@ -5,9 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css"/>
-    <link rel="stylesheet" href="./css/main.css">
+<!--    <link rel="stylesheet" href="./node_modules/@splidejs/splide/dist/css/splide.min.css">-->
+<!--    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css"/>-->
+<!--    <link rel="stylesheet" href="./css/main.css">-->
+        <link rel="stylesheet" href="./css/main.min.css">
     <title>WAGGY Pet Shop.</title>
 </head>
 <body>
@@ -50,7 +51,7 @@
                     </div>
                     <div class="bottomMenu__userOptions">
                         <img class="bottomMenu__userOptionImg" src="./assets/img/person.svg" alt="User">
-                        <img class="bottomMenu__userOptionImg" src="./assets/img/heart.svg" alt="Liked">
+                        <img class="bottomMenu__userOptionImg" src="assets/img/heart.png" alt="Liked">
                         <img class="bottomMenu__userOptionImg" src="./assets/img/shopping-cart.svg" alt="Cart">
                     </div>
                 </nav>
@@ -68,27 +69,27 @@
                 </div>
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">
-                            <img class='headSplider__img' src="./assets/img/main_photo.png" alt="Pet">
-                            <div class="headSplider__text">
-                                <p class="headSplider__promo">save 10-20 % off</p>
-                                <h1 class="headSplider__motto">Best destination for <span class="headSplider__span">your pets</span></h1>
+                        <li class="banner splide__slide">
+                            <img class='banner__img' src="./assets/img/main_photo.png" alt="Pet">
+                            <div class="banner__text">
+                                <p class="banner__promo">save 10-20 % off</p>
+                                <h1 class="banner__motto">Best destination for <span class="banner__span">your pets</span></h1>
                                 <button class="butt">Shop now →</button>
                             </div>
                         </li>
-                        <li class="splide__slide">
-                            <img class='headSplider__img' src="./assets/img/main_photo3.png" alt="Pet">
-                            <div class="headSplider__text">
-                                <p class="headSplider__promo">save 10-20 % off</p>
-                                <h1 class="headSplider__motto">Best destination for <span class="headSplider__span">your pets</span></h1>
-                                <button class="butt">Shop now →</button>
-                            </div>
+                        <li class="banner splide__slide">
+                        <img class='banner__img' src="./assets/img/main_photo3.png" alt="Pet">
+                        <div class="banner__text">
+                            <p class="banner__promo">save 10-20 % off</p>
+                            <h1 class="banner__motto">Best destination for <span class="banner__span">your pets</span></h1>
+                            <button class="butt">Shop now →</button>
+                        </div>
                         </li>
-                        <li class="splide__slide">
-                            <img class='headSplider__img' src="./assets/img/main_photo2.png" alt="Pet">
-                            <div class="headSplider__text">
-                                <p class="headSplider__promo">save 10-20 % off</p>
-                                <h1 class="headSplider__motto">Best destination for <span class="headSplider__span">your pets</span></h1>
+                        <li class="banner splide__slide">
+                            <img class='banner__img' src="./assets/img/main_photo2.png" alt="Pet">
+                            <div class="banner__text">
+                                <p class="banner__promo">save 10-20 % off</p>
+                                <h1 class="banner__motto">Best destination for <span class="banner__span">your pets</span></h1>
                                 <button class="butt">Shop now →</button>
                             </div>
                         </li>
@@ -117,12 +118,446 @@
                     <a href="#" class="shopShortcuts__link"><h3 class="shopShortcuts__title">Cat Shop</h3></a>
                 </div>
             </section>
+            <section class="products pet-clothing">
+                <div class="products__header">
+                    <h2 class="product__title">Pet clothing</h2>
+                    <button class="butt product-butt">Shop All →</button>
+                </div>
+                <div class="splide products__carousel">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev"></button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg>
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe2.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe3.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe4.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe5.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe6.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="products foodies">
+                <div class="products__header">
+                    <h2 class="product__title">Pet clothing</h2>
+                    <div class="product__categories">
+                        <h4 class="categories__title">All</h4>
+                        <h4 class="categories__title">Cat</h4>
+                        <h4 class="categories__title">dog</h4>
+                        <h4 class="categories__title">Bird</h4>
+                    </div>
+                    <button class="butt product-butt">Shop All →</button>
+                </div>
+                <div class="products__carousel pet-foodies"></div>
+            </section>
+            <section class="sale">
+                <div class="banner">
+                    <div class="banner__text sale__text">
+                        <p class="banner__promo sale__promo">Upto 40% off</p>
+                        <h1 class="banner__motto sale__motto">Clearance sale !!!</h1>
+                        <button class="butt"><a href="#">Shop now →</a></button>
+                    </div>
+                    <img class='headSplider__img' src="./assets/img/main_photo4.png" alt="Pet">
+                </div>
+            </section>
+            <section class="reviews">
+                <div class="splide reviews__carousel">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="reviews__review">
+                                    <img class="review__image" src="./assets/img/quaters.png" alt="">
+                                    <div class="review__info">
+                                        <h3 class="review__text">At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.</h3>
+                                        <p class="review__author">-Joshina Lin</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="reviews__review">
+                                    <img class="review__image" src="./assets/img/quaters.png" alt="">
+                                    <div class="review__info">
+                                        <h3 class="review__text">At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.</h3>
+                                        <p class="review__author">-Joshina Lin</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="reviews__review">
+                                    <img class="review__image" src="./assets/img/quaters.png" alt="">
+                                    <div class="review__info">
+                                        <h3 class="review__text">At the core of our practice is the idea that cities are the incubators of our greatest achievements, and the best hope for a sustainable future.</h3>
+                                        <p class="review__author">-Joshina Lin</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class=" products bestSelling">
+                <div class="products__header">
+                    <h2 class="product__title">Best Selling Products</h2>
+                    <button class="butt product-butt">Shop All →</button>
+                </div>
+                <div class="splide bestSelling__carousel">
+                    <div class="splide__arrows">
+                        <button class="splide__arrow splide__arrow--prev"></button>
+                        <button class="splide__arrow splide__arrow--next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="m11.707 3.293-1.414 1.414L17.586 12l-7.293 7.293 1.414 1.414L20.414 12l-8.707-8.707z"/><path d="M5.707 3.293 4.293 4.707 11.586 12l-7.293 7.293 1.414 1.414L14.414 12 5.707 3.293z"/></svg>
+                        </button>
+                    </div>
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/cathouse.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/food2.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe6.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe5.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe3.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="products__product">
+                                    <div class="product__imageDiv">
+                                        <img class="product_image" src="./assets/img/dogclothe4.png" alt="Doh Clothe #1">
+                                    </div>
+                                    <div class="product__info">
+                                        <h3 class="product__name">Grey Hoodie</h3>
+                                        <div class="product__rating">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                            <img class="product__star" src="./assets/img/star.svg" alt="5 stars from 5">
+                                        </div>
+                                        <p class="product__price">$18.00</p>
+                                    </div>
+                                    <div class="product__events">
+                                        <button class=" butt product__cart">Add to cart</button>
+                                        <button class="likedProduct"><svg class="likedProduct__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 14" fill="none">
+                                            <path d="M14.447 1.38889C12.7345 0.0337844 10.1877 0.27753 8.61584 1.78353L8.00023 2.37258L7.38462 1.78353C5.8159 0.27753 3.26595 0.0337844 1.55348 1.38889C-0.408984 2.94422 -0.512107 5.73569 1.24411 7.4216L7.29087 13.2193C7.68149 13.5936 8.31585 13.5936 8.70647 13.2193L14.7532 7.4216C16.5126 5.73569 16.4094 2.94422 14.447 1.38889Z"  stroke="black" fill="nowne"/>
+                                        </svg></button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="register">
+                <img src="./assets/img/pawspng.png" alt="Paws" class="register__paws first">
+            <form method="post" class="register__form">
+                <h2 class="form__title">Get 20% Off on <span class="register__span">first Purchase</span></h2>
+                <input class="form__input email" required type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your email address">
+                <input class="form__input original" required minlength="8" type="password" placeholder="create a password">
+                <input class="form__input repeat" required minlength="8" type="password" placeholder="repeat password">
+                <button class="butt form__butt" type="submit">Register it now</button>
+            </form>
+                <img src="./assets/img/pawspng.png" alt="Paws" class="register__paws second">
+        </section>
+            <section class="photos">
+                <div class="photos__photo">
+                    <img src="./assets/img/photo.png" class="photo__photo" alt="">
+                    <div class="photos__inst">
+                        <img src="./assets/img/inst.svg" alt="">
+                    </div>
+                </div>
+                <div class="photos__photo">
+                    <img src="./assets/img/photo2.png" class="photo__photo" alt="">
+                    <div class="photos__inst">
+                        <img src="./assets/img/inst.svg" alt="">
+                    </div>
+                </div>
+                <div class="photos__photo">
+                    <img src="./assets/img/photo3.png" class="photo__photo" alt="">
+                    <div class="photos__inst">
+                        <img src="./assets/img/inst.svg" alt="">
+                    </div>
+                </div>
+                <div class="photos__photo">
+                    <img src="./assets/img/photo4.png" class="photo__photo" alt="">
+                    <div class="photos__inst">
+                        <img src="./assets/img/inst.svg" alt="">
+                    </div>
+                </div>
+                <div class="photos__photo">
+                    <img src="./assets/img/photo5.png" class="photo__photo" alt="">
+                    <div class="photos__inst">
+                        <img src="./assets/img/inst.svg" alt="">
+                    </div>
+                </div>
+                <div class="photos__photo">
+                    <img src="./assets/img/photo.png" class="photo__photo" alt="">
+                    <div class="photos__inst">
+                        <img src="./assets/img/inst.svg" alt="">
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
 
         </footer>
     </div>
-    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
-    <script src="./js/main.js"></script>
+<!--    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>-->
+<!--    <script src="./js/main.js"></script>-->
+    <script src="./js/main.min.js"></script>
+<!--    <script src="./js/petFoodies.js"></script>-->
+<!--    <script src="./js/petFood.js"></script>-->
 </body>
 </html>
