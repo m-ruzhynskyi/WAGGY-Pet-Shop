@@ -4520,4 +4520,104 @@ header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionI
   opacity: 1;
 }
 
+footer {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .socials, footer .links, footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+footer .footer__text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  text-transform: none;
+  color: #908F8D;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+footer .footer__title {
+  font-size: 26px;
+  font-family: "Chilanka";
+  text-transform: capitalize;
+  color: #41403E;
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+footer .socials {
+  max-width: 306px;
+}
+footer .socials .social {
+  display: flex;
+}
+footer .socials .social .social__div {
+  width: 45px;
+  height: 45px;
+  border-radius: 70px;
+  border: 0.5px solid #D9D9D8;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+footer .socials .social .social__div .social__svg {
+  position: absolute;
+  bottom: 32%;
+  right: 32%;
+}
+footer .socials .social .social__div .tube {
+  right: 30%;
+}
+footer .socials .social .social__div:hover {
+  background-color: #DEAD6F;
+}
+footer .socials .social .social__div:hover .social__svg {
+  filter: invert(1);
+}
+footer .links {
+  max-width: 306px;
+}
+footer .links .links__link {
+  font-size: 19px;
+  font-family: "Chilanka";
+  text-transform: capitalize;
+  color: #41403E;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+footer .newsletter {
+  max-width: 306px;
+}
+footer .newsletter .newsletter__form {
+  position: relative;
+}
+footer .newsletter .newsletter__form .newsletter__email {
+  border: 0.5px solid rgb(217, 217, 216);
+  border-radius: 50px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  text-transform: none;
+  color: #908F8D;
+  padding: 17px;
+  width: 100%;
+}
+footer .newsletter .newsletter__form .newsletter__butt {
+  background-color: #DEAD6F;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 15px 12px 15px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

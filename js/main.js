@@ -6,25 +6,30 @@ let headSplider = new Splide( '#headSplider', {
 
 headSplider.mount()
 
-let productCarousel = new Splide( '.products__carousel', {
-    type  : 'slide',
-    perPage: 4,
-    rewind: true,
-    speed: 800,
-    pagination: false
-} );
+function adaptiveSlider(name, per){
+    let splider = new Splide( '.' + name, {
+        type  : 'slide',
+        perPage: per,
+        rewind: true,
+        speed: 800,
+        pagination: false
+    } );
 
-productCarousel.mount();
+    splider.mount();
+}
+function spliderProducts (per){
+    const sel = ['products__carousel', 'bestSelling__carousel']
+    sel.forEach(carName => adaptiveSlider(carName, per))
+}
 
-let bestSelling = new Splide( '.bestSelling__carousel', {
-    type  : 'slide',
-    perPage: 4,
-    rewind: true,
-    speed: 800,
-    pagination: false
-});
+function checkWidth(width){
+    if (width <= 1280) spliderProducts(3)
+    else spliderProducts(4)
+}
+window.addEventListener("resize", () => {
+    checkWidth(self.innerWidth)
+})
 
-bestSelling.mount();
 
 let reviewsCarousel = new Splide( '.reviews__carousel', {
     type  : 'loop',
@@ -36,6 +41,7 @@ let reviewsCarousel = new Splide( '.reviews__carousel', {
 
 reviewsCarousel.mount();
 window.addEventListener('DOMContentLoaded', () => {
+    checkWidth(self.innerWidth)
     new PetFood().init()
 })
 document.querySelectorAll('.categories__title').forEach(category => {
@@ -47,3 +53,4 @@ document.querySelectorAll('.categories__title').forEach(category => {
         new ShowCategory(e.target.textContent.toLowerCase())
     })
 })
+

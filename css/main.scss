@@ -1,6 +1,8 @@
 @import "config";
+@import "responsive";
 @import "../node_modules/@splidejs/splide/dist/css/splide.min";
 @import "../node_modules/animate.css/animate.min";
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -46,4 +48,4 @@ a{
 
 @import "header";
 @import "mainBody";
-@import "responsive";
+@import "footer";

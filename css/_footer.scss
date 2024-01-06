@@ -1,0 +1,96 @@
+footer{
+  margin: {
+    top: 130px;
+    bottom: 100px;
+  };
+  max-width: $screen-lr;
+  @include autoMargin();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .socials, .links, .newsletter{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .footer__text{
+    @include setFont($secondaryFontFamily, 1, none, #908F8D);
+    margin: {
+      top: 20px;
+      bottom: 30px;
+    };
+  }
+
+  .footer__title{
+    @include setFont($mainFontFamily, 11, capitalize, #41403E);
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .socials{
+    max-width: 306px;
+    .social{
+      display: flex;
+      .social__div{
+        width: 45px;
+        height: 45px;
+        border-radius: 70px;
+        border: .5px solid #D9D9D8;
+        position: relative;
+        cursor: pointer;
+        margin-right: 10px;
+        .social__svg {
+          position: absolute;
+          bottom: 32%;
+          right: 32%;
+        }
+        .tube{
+            right: 30%;
+        }
+        &:hover{
+          background-color: #DEAD6F;
+          & .social__svg{
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
+
+  .links{
+    .links__link{
+      @include setFont($mainFontFamily, 4, capitalize, #41403E);
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    max-width: 306px;
+  }
+
+  .newsletter{
+    .newsletter__form{
+      position: relative;
+      .newsletter__email{
+        border: .5px solid rgb(217, 217, 216);
+        border-radius: 50px;
+        @include setFont($secondaryFontFamily, 0, none, #908F8D);
+        padding: 17px;
+        width: 100%;
+      }
+      .newsletter__butt{
+        background-color: #DEAD6F;
+        border-radius: 50px;
+        border: none;
+        padding: 15px 15px 12px 15px;
+        position: absolute;
+        top: 6px;
+        right: 10px;
+        cursor: pointer;
+      }
+    }
+    max-width: 306px;
+  }
+}
