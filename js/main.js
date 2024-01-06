@@ -23,8 +23,11 @@ function spliderProducts (per){
 }
 
 function checkWidth(width){
-    if (width <= 1280) spliderProducts(3)
-    else spliderProducts(4)
+    if (width > 1400) spliderProducts(4);
+    if (width < 1400) spliderProducts(3);
+    if (width < 1150) spliderProducts(2);
+    if (width < 801) spliderProducts(1);
+
 }
 window.addEventListener("resize", () => {
     checkWidth(self.innerWidth)

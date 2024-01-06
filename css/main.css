@@ -6,6 +6,136 @@
   font-family: "Montserrat";
   src: url("/assets/fonts/Montserrat-Regular.ttf");
 }
+@media only screen and (max-width: 1400px) {
+  header > div {
+    max-width: 1100px !important;
+  }
+  main .banner__motto {
+    font-size: 75px !important;
+  }
+  main .shopShortcuts {
+    max-width: 1100px !important;
+  }
+  main .products {
+    max-width: 1100px !important;
+  }
+  footer {
+    max-width: 1100px !important;
+  }
+}
+@media screen and (max-width: 1150px) {
+  header > div {
+    max-width: 800px !important;
+    justify-content: space-around !important;
+  }
+  header .topMenu__contacts {
+    display: none !important;
+  }
+  header .bottomMenu__nav {
+    display: none !important;
+  }
+  main .banner__motto {
+    font-size: 50px !important;
+  }
+  main .banner__img {
+    width: 480px !important;
+    margin-bottom: 30px;
+  }
+  main .shopShortcuts {
+    max-width: 800px !important;
+  }
+  main .products {
+    max-width: 800px !important;
+  }
+  main .product__categories .categories__title {
+    width: 40px !important;
+    margin-top: 20px !important;
+  }
+  main .sale .sale__motto {
+    width: 240px !important;
+  }
+  main .sale .sale__text {
+    margin-bottom: 65px !important;
+  }
+  main .photos {
+    justify-content: space-around !important;
+  }
+  footer {
+    max-width: 800px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  header > div {
+    max-width: 400px !important;
+    justify-content: space-around !important;
+  }
+  header .topMenu__contacts {
+    display: none !important;
+  }
+  header .bottomMenu__nav {
+    display: none !important;
+  }
+  main .banner {
+    flex-direction: column !important;
+  }
+  main .banner__motto {
+    font-size: 35px !important;
+  }
+  main .banner__img {
+    width: 385px !important;
+    margin-bottom: 30px;
+  }
+  main .banner__text {
+    margin-bottom: 50px;
+  }
+  main .shopShortcuts {
+    max-width: 400px !important;
+  }
+  main .products {
+    max-width: 400px !important;
+  }
+  main .butt {
+    padding: 10px 40px;
+    margin-top: 20px;
+  }
+  main .products__header {
+    align-items: unset !important;
+    flex-direction: column;
+  }
+  main .products__header .product__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  main .product__categories .categories__title {
+    width: 40px !important;
+    margin-top: 20px !important;
+  }
+  main .likedProduct {
+    margin-top: 20px !important;
+  }
+  main .review__text {
+    font-size: 19px !important;
+  }
+  main .sale .sale__motto {
+    width: 220px !important;
+  }
+  main .sale .sale__text {
+    margin-bottom: 65px !important;
+  }
+  main .form__title {
+    font-size: 35px !important;
+  }
+  main .form__input {
+    width: 221px;
+    transform: translateX(-40px);
+  }
+  main .photos {
+    justify-content: space-around !important;
+  }
+  footer {
+    max-width: 400px !important;
+  }
+}
 .splide__container {
   box-sizing: border-box;
   position: relative;
@@ -4173,6 +4303,22 @@ header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionI
 header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionImg:not(:last-child) {
   margin-right: 40px;
 }
+header .header__bottomMenu .bottomMenu____responsive {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .header__bottomMenu .bottomMenu____responsive .bottomMenu__userOptionImg:not(:last-child) {
+  margin-right: 40px;
+}
+header .header__bottomMenu .bottomMenu____responsive .bottomMenu__menu .menu {
+  width: 30px;
+  height: 2px;
+  background-color: rgb(65, 64, 62);
+}
+header .header__bottomMenu .bottomMenu____responsive .bottomMenu__menu .menu:nth-child(2) {
+  margin: 5px 0;
+}
 
 .main #headSplider {
   margin-bottom: 150px;
@@ -4212,12 +4358,16 @@ header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionI
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main .shopShortcuts .shopShortcuts__shop {
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  max-width: 230px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 .main .shopShortcuts .shopShortcuts__shop .shopShortcuts__title {
   margin-top: 16px;
@@ -4389,6 +4539,13 @@ header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionI
   max-width: 480px;
   margin-right: 120px;
 }
+.main .sale .sale__banner {
+  flex-wrap: wrap;
+  flex-direction: row-reverse !important;
+}
+.main .sale .banner__img {
+  max-width: 648px;
+}
 .main .sale .sale__promo {
   font-size: 36px !important;
   font-weight: 300;
@@ -4442,7 +4599,7 @@ header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionI
   margin-top: 20px;
 }
 .main .register {
-  margin-bottom: 150px;
+  margin-bottom: 130px;
   background-color: #F9F3EC;
   display: flex;
   justify-content: center;
@@ -4504,6 +4661,7 @@ header .header__bottomMenu nav .bottomMenu__userOptions .bottomMenu__userOptionI
   position: relative;
   cursor: pointer;
   max-width: 300px;
+  margin-top: 20px;
 }
 .main .photos .photos__inst {
   opacity: 0;

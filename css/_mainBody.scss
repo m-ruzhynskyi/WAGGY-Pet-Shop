@@ -38,12 +38,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     .shopShortcuts__shop {
       display: flex;
       flex-direction: column;
       align-items: center;
       cursor: pointer;
+      max-width: 230px;
+      margin: {
+        right: 20px;
+        top: 20px;
+      };
 
       .shopShortcuts__title {
         margin-top: 16px;
@@ -236,6 +242,13 @@
       max-width: 480px;
       margin-right: 120px;
     }
+    .sale__banner{
+      flex-wrap: wrap;
+      flex-direction: row-reverse !important;
+    }
+    .banner__img{
+      max-width: 648px;
+    }
     .sale__promo{
       font-size: $fontSize +21 !important;
       font-weight: 300;
@@ -289,7 +302,7 @@
   }
 
   .register{
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     background-color: $mainColor;
     display: flex;
     justify-content: center;
@@ -348,6 +361,7 @@
       position: relative;
       cursor: pointer;
       max-width: 300px;
+      margin-top: 20px;
     }
     .photos__inst{
       opacity: 0;

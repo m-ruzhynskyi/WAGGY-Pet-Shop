@@ -1,5 +1,5 @@
-header{
-  > div{
+header {
+  > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,12 +9,15 @@ header{
       left: auto;
     }
   }
-  .header__topMenu{
+
+  .header__topMenu {
     padding-top: 28px;
   }
-  .topMenu__searchBar{
+
+  .topMenu__searchBar {
     position: relative;
-    .topMenu__input{
+
+    .topMenu__input {
       font-family: $secondaryFontFamily;
       font-size: $fontSize;
       border-radius: 4px;
@@ -22,68 +25,99 @@ header{
       width: 472px;
       padding: 15px 25px;
     }
-    .topMenu__search{
+
+    .topMenu__search {
       position: absolute;
       top: 15px;
       right: 15px;
       cursor: pointer;
     }
   }
-  .topMenu__contacts{
+
+  .topMenu__contacts {
     display: flex;
     font-family: $mainFontFamily;
     font-size: $fontSize +4;
     letter-spacing: 0.2px;
-    .topMenu__contactLabel{
+
+    .topMenu__contactLabel {
       text-align: right;
       margin-bottom: 8px;
       font-family: $secondaryFontFamily;
       font-size: $fontSize;
       color: #908F8D;
     }
-    .topMenu__phone{
+
+    .topMenu__phone {
       margin-right: 67px;
     }
-    .topMenu__emailLink, .topMenu__phoneLink{
+
+    .topMenu__emailLink, .topMenu__phoneLink {
       color: black;
     }
   }
-  .header_divider{
+
+  .header_divider {
     display: block;
     border: 1px solid $secondColor;
-    margin:{
+    margin: {
       top: 28px;
       bottom: 20px
     }
   }
-  .header__bottomMenu{
+
+  .header__bottomMenu {
     margin-bottom: 20px;
-    nav{
+
+    nav {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-family: $mainFontFamily;
       font-size: $fontSize+4;
-      .bottomMenu__select{
+
+      .bottomMenu__select {
         font-family: $mainFontFamily;
         font-size: $fontSize+4;
         border: none;
       }
-      .bottomMenu__categories{
-        .bottomMenu__category{
+
+      .bottomMenu__categories {
+        .bottomMenu__category {
           cursor: pointer;
         }
-        .bottomMenu__category:not(:last-child){
+
+        .bottomMenu__category:not(:last-child) {
           margin-right: 50px;
         }
       }
-      .bottomMenu__userOptions{
-        .bottomMenu__userOptionImg{
-          cursor:pointer;
+
+      .bottomMenu__userOptions {
+        .bottomMenu__userOptionImg {
+          cursor: pointer;
         }
-        .bottomMenu__userOptionImg:not(:last-child){
+
+        .bottomMenu__userOptionImg:not(:last-child) {
           margin-right: 40px;
+        }
+      }
+    }
+    .bottomMenu____responsive {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .bottomMenu__userOptionImg:not(:last-child) {
+        margin-right: 40px;
+      }
+      .bottomMenu__menu{
+        .menu{
+          width: 30px;
+          height: 2px;
+          background-color: rgb(65, 64, 62);
+          &:nth-child(2){
+            margin: 5px 0;
+          }
         }
       }
     }
