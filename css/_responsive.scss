@@ -32,8 +32,11 @@
       display: none !important;
     }
 
-    .bottomMenu__nav{
+    .bottomMenu-nav{
       display: none !important;
+    }
+    .bottomMenu____responsive{
+      display: flex !important;
     }
   }
   main{
@@ -82,11 +85,18 @@
       justify-content: space-around !important;
     }
 
-    .topMenu__contacts{
-      display: none !important;
+    .header__topMenu{
+      flex-direction: column !important;
+      .topMenu__input{
+        width: 380px !important;
+        margin-top: 20px;
+      }
+      .topMenu__search{
+        top: 38px !important;
+      }
     }
 
-    .bottomMenu__nav{
+    .bottomMenu-nav{
       display: none !important;
     }
 

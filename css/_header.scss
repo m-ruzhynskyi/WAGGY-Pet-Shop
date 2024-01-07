@@ -77,22 +77,6 @@ header {
       font-family: $mainFontFamily;
       font-size: $fontSize+4;
 
-      .bottomMenu__select {
-        font-family: $mainFontFamily;
-        font-size: $fontSize+4;
-        border: none;
-      }
-
-      .bottomMenu__categories {
-        .bottomMenu__category {
-          cursor: pointer;
-        }
-
-        .bottomMenu__category:not(:last-child) {
-          margin-right: 50px;
-        }
-      }
-
       .bottomMenu__userOptions {
         .bottomMenu__userOptionImg {
           cursor: pointer;
@@ -103,20 +87,28 @@ header {
         }
       }
     }
+
     .bottomMenu____responsive {
       width: 100%;
-      display: flex;
+      display: none;
       justify-content: space-between;
+      align-items: center;
       .bottomMenu__userOptionImg:not(:last-child) {
         margin-right: 40px;
       }
       .bottomMenu__menu{
-        .menu{
-          width: 30px;
-          height: 2px;
-          background-color: rgb(65, 64, 62);
-          &:nth-child(2){
-            margin: 5px 0;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgb(209, 209, 209);
+        .bottomMenu__icon {
+          .menu {
+            width: 30px;
+            height: 2px;
+            background-color: rgb(65, 64, 62);
+
+            &:nth-child(2) {
+              margin: 5px 0;
+            }
           }
         }
       }

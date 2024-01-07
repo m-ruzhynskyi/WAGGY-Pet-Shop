@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -16,6 +16,25 @@
 </head>
 <body>
 <div class="wrapper">
+    <div class="rightMenu animate__animated animate__fadeInRight">
+            <nav class="main__nav right__nav">
+                <select name="categories" class="main__select right-select">
+                    <option class="main__options right-opt" selected>Shop by category</option>
+                    <option class="main__options right-opt">Clothes</option>
+                    <option class="main__options right-opt">Food</option>
+                    <option class="main__options right-opt">Toy</option>
+                </select>
+                <div class="main__categories right-categories">
+                    <a class="main__category right-cat active">Home</a>
+                    <a class="main__category right-cat">Page</a>
+                    <a class="main__category right-cat">Shop</a>
+                    <a class="main__category right-cat">Blog</a>
+                    <a class="main__category right-cat">Contact</a>
+                    <a class="main__category right-cat">Offers</a>
+                </div>
+            </nav>
+        </div>
+<div class="lowBrightness"> </div>
 <header class="header">
     <div class="header__topMenu">
         <img class="logoImg" src="./assets/img/Logo.png" alt="Logo">
@@ -37,39 +56,41 @@
     </div>
     <hr class="header_divider">
     <div class="header__bottomMenu">
-        <nav class="bottomMenu__nav">
-            <select name="categories" class="bottomMenu__select">
-                <option class="bottomMenu__options" selected>Shop by category</option>
-                <option class="bottomMenu__options">Clothes</option>
-                <option class="bottomMenu__options">Food</option>
-                <option class="bottomMenu__options">Toy</option>
-            </select>
-            <div class="bottomMenu__categories">
-                <a class="bottomMenu__category">Home</a>
-                <a class="bottomMenu__category">Page</a>
-                <a class="bottomMenu__category">Shop</a>
-                <a class="bottomMenu__category">Blog</a>
-                <a class="bottomMenu__category">Contact</a>
-                <a class="bottomMenu__category">Offers</a>
-            </div>
-            <div class="bottomMenu__userOptions">
+        <nav class="main__nav bottomMenu-nav">
+                <select name="categories" class="main__select">
+                    <option class="main__options bot-opt" selected>Shop by category</option>
+                    <option class="main__options bot-opt">Clothes</option>
+                    <option class="main__options bot-opt">Food</option>
+                    <option class="main__options bot-opt">Toy</option>
+                </select>
+                <div class="main__categories ">
+                    <a class="main__category bot-cat active">Home</a>
+                    <a class="main__category bot-cat">Page</a>
+                    <a class="main__category bot-cat">Shop</a>
+                    <a class="main__category bot-cat">Blog</a>
+                    <a class="main__category bot-cat">Contact</a>
+                    <a class="main__category bot-cat">Offers</a>
+                </div>
+                <div class="bottomMenu__userOptions">
                 <img class="bottomMenu__userOptionImg" src="./assets/img/person.svg" alt="User">
                 <img class="bottomMenu__userOptionImg" src="./assets/img/heart.svg" alt="Liked">
                 <img class="bottomMenu__userOptionImg" src="./assets/img/cart.svg" alt="Cart">
             </div>
         </nav>
-<!--        <div class="bottomMenu____responsive">-->
-<!--            <div class="bottomMenu__userOptions">-->
-<!--                <img class="bottomMenu__userOptionImg" src="./assets/img/person.svg" alt="User">-->
-<!--                <img class="bottomMenu__userOptionImg" src="./assets/img/heart.svg" alt="Liked">-->
-<!--                <img class="bottomMenu__userOptionImg" src="./assets/img/cart.svg" alt="Cart">-->
-<!--            </div>-->
-<!--            <div class="bottomMenu__menu">-->
-<!--                <div class="menu"></div>-->
-<!--                <div class="menu"></div>-->
-<!--                <div class="menu"></div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="bottomMenu____responsive">
+            <div class="bottomMenu__userOptions">
+                <img class="bottomMenu__userOptionImg" src="./assets/img/person.svg" alt="User">
+                <img class="bottomMenu__userOptionImg" src="./assets/img/heart.svg" alt="Liked">
+                <img class="bottomMenu__userOptionImg" src="./assets/img/cart.svg" alt="Cart">
+            </div>
+            <div class="bottomMenu__menu">
+                <div class="bottomMenu__icon">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </header>
@@ -615,6 +636,7 @@
 <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>-->
 <script src="./js/main.js"></script>
+<script src="./js/rightMenu.js"></script>
 <!--    <script src="./js/main.min.js"></script>-->
 <script src="./js/petFoodies.js"></script>
 <script src="./js/petFood.js"></script>
